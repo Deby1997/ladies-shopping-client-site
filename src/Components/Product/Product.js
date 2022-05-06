@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Product.css';
 
 const Product = ({ service }) => {
     const { name, img, description, price } = service;
@@ -10,13 +11,13 @@ const Product = ({ service }) => {
     }
     return (
         <div>
-            <div class="card" >
-                <img src={img} alt="" width="300" height="400" />
-                <div class="card-body">
-                    <h5 class="card-title">Name:{name}</h5>
-                    <h5 class="card-title">Price:{price}</h5>
-                    <p class="card-text"><small>{description}</small></p>
-                    <button class="btn btn-primary" onClick={() => navToServeDetail(name)}>Check out</button>
+            <div className="card shadow p-3 mb-5 bg-body rounded back-card" >
+                <img src={img} alt="" height="400" />
+                <div className="card-body">
+                    <h5 className="card-title">Name:{name}</h5>
+                    <h5 className="card-title">Price:{price}</h5>
+                    <p className="card-text"><small>{description}</small></p>
+                    <button className="btn btn-dark" onClick={() => navToServeDetail(name)}>Check out</button>
                 </div>
             </div>
         </div>

@@ -14,17 +14,17 @@ const Header = () => {
     }
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light head-color sticky-top">
-                <div class="container-fluid">
-                    <div class="navbar-brand" href="#">
+            <nav className="navbar navbar-expand-lg navbar-light head-color sticky-top">
+                <div className="container-fluid">
+                    <div className="navbar-brand" href="#">
                         <img src={image} alt="" width="50" height="34" />
                     </div>
-                    <nav class="navbar-brand text-white" >Shopping-zone</nav>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <nav className="navbar-brand text-white" >Shopping-zone</nav>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
                             <NavLink className="nav-link active text-white" aria-current="page" to="/home" >Home</NavLink>
                             <NavLink className="nav-link text-white" to="/product" >Products</NavLink>
                             <nav className="nav-link text-white" >Blog</nav>
