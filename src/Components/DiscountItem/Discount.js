@@ -24,7 +24,7 @@ const Discount = () => {
                 }}>
 
                     <h3 className='text-white'>20% OFF</h3>
-                    <button onClick={handledis} type="button" class="btn   px-5 switch">Check</button>
+                    <button onClick={handledis} type="button" className="btn   px-5 switch">Check</button>
                 </div>
             </div>
         </div>
