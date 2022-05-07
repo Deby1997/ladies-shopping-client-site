@@ -27,6 +27,12 @@ const Header = () => {
                         <div className="navbar-nav">
                             <NavLink className="nav-link active text-white" aria-current="page" to="/home" >Home</NavLink>
                             <NavLink className="nav-link text-white" to="/product" >Products</NavLink>
+                            {
+                                user && <>
+                                    <NavLink className="nav-link text-white" to="/addProduct" >Add Product</NavLink>
+                                    <NavLink className="nav-link text-white" to="/manageProduct" >Manage Product</NavLink>
+                                </>
+                            }
                             <nav className="nav-link text-white" >Blog</nav>
                             {
                                 user ?

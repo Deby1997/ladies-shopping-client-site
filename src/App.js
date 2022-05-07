@@ -10,6 +10,8 @@ import Register from './Components/LogIn/Register/Register';
 import Products from './Components/Products/Products';
 import Checkout from './Components/Checkout/Checkout';
 import RequireAuth from './Components/LogIn/RequireAuth/RequireAuth';
+import AddProduct from './Components/AddProduct/AddProduct';
+import ManageProduct from './Components/ManageProduct/ManageProduct';
 
 
 
@@ -29,6 +31,16 @@ function App() {
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        } />
+        <Route path="/addProduct" element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+        } />
+        <Route path="/manageProduct" element={
+          <RequireAuth>
+            <ManageProduct></ManageProduct>
           </RequireAuth>
         } />
         <Route path="*" element={<NotFound></NotFound>} />
