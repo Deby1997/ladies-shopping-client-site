@@ -1,7 +1,9 @@
 # Ladies Shooping Zone
+# Live Site:
 
 
-## Available Scripts
+## Used Tools
+*React
 
 
 
