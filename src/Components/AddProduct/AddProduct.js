@@ -20,13 +20,13 @@ const AddProduct = () => {
   };
   return (
     <div className='w-50 mx-auto'>
-      <h2>please add your product.</h2>
+      <h2>Add your product.</h2>
       <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
         <input placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
         <input placeholder='Description' className='my-2' {...register("description")} />
         <input placeholder='Price' className='my-2' type="number" {...register("price")} />
         <input placeholder='Photo URL' className='my-2' type="text" {...register("img")} />
-        <input className='btn btn-info w-25 mx-auto' type="submit" />
+        <input className='btn btn-info w-25 mx-auto' type="submit" value="Add New Item" />
       </form>
     </div>
   );

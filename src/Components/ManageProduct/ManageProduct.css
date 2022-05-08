@@ -1,0 +1,12 @@
+.manage-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+@media only screen and (max-width:576px) {
+  .manage-productt {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

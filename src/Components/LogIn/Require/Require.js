@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Require = () => {
-    return (
-        <div>
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            clicks: 0,
+            show: true
+        };
+    }
 
-        </div>
-    );
-};
+    IncrementItem = () => {
+        this.setState({ clicks: this.state.clicks + 1 });
+    }
+    DecreaseItem = () => {
+        this.setState({ clicks: this.state.clicks - 1 });
+    }
+    ToggleClick = () => {
+        this.setState({ show: !this.state.show });
+    }
 
-export default Require;
+    render() {
+        return (
+            <div>
+                <button className='btn btn-info' onClick={this.IncrementItem}>+</button>
+                <button className='btn btn-info' onClick={this.DecreaseItem}>-</button>
+                <button className='btn btn-warning' onClick={this.ToggleClick}>
+                    {this.state.show ? 'Hide number' : 'Show number'}
+                </button>
+                {this.state.show ? <h2>{this.state.clicks}</h2> : ''}
+            </div>
+        );
+    }
+}
+
+export default App;
