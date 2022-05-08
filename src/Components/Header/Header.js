@@ -33,7 +33,7 @@ const Header = () => {
                                     <NavLink className="nav-link text-white" to="/manageProduct" >Manage Product</NavLink>
                                 </>
                             }
-                            <nav className="nav-link text-white" >Blog</nav>
+                            <NavLink className="nav-link text-white" to="/blog" >Blog</NavLink>
                             {
                                 user ?
                                     <NavLink onClick={handleSognOut} className="nav-link text-white" to="/login" >Sign Out</NavLink>
